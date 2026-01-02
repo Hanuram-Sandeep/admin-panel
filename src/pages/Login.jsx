@@ -34,7 +34,8 @@ const Login = () => {
       <div className="hidden lg:flex lg:w-1/2 bg-primary p-12 flex-col justify-between">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-xl bg-primary-foreground/20 flex items-center justify-center">
-            <ShoppingBag className="w-6 h-6 text-primary-foreground" />
+            {/* <ShoppingBag className="w-6 h-6 text-primary-foreground" /> */}
+            <img src="../../public/indian.jpeg" />
           </div>
           <span className="text-2xl font-bold text-primary-foreground">
             AdminPanel
@@ -49,12 +50,12 @@ const Login = () => {
             with ease
           </h1>
           <p className="text-primary-foreground/80 text-lg">
-            A powerful admin dashboard to manage products, orders, and
+            A powerful Admin Dashboard to manage products, orders, and
             customers.
           </p>
         </div>
         <p className="text-primary-foreground/60 text-sm">
-          © 2024 AdminPanel. All rights reserved.
+          © 2026 AdminPanel. All rights reserved.
         </p>
       </div>
       <div className="w-full lg:w-1/2 flex items-center justify-center p-8">

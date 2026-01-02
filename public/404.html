@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=/" />
-    <title>Redirect</title>
+    <meta charset="utf-8" />
+    <script>
+      const path = location.pathname;
+      location.replace("/?redirect=" + path);
+    </script>
   </head>
   <body></body>
 </html>

@@ -22,7 +22,7 @@ const Sidebar = () => {
           </div>
           <div>
             <h1 className="font-semibold text-sidebar-foreground">
-              Admin Panel
+              Admin Panelll
             </h1>
             <p className="text-xs text-sidebar-foreground/60">E-Commerce</p>
           </div>

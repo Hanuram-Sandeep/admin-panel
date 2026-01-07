@@ -32,10 +32,10 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 
-// GitHub Pages SPA redirect fix
+// // GitHub Pages SPA redirect fix
 const redirect = new URLSearchParams(window.location.search).get("redirect");
 if (redirect) {
-  window.history.replaceState(null, "", redirect);
+  window.history.replaceState(null, "", "/admin" + redirect);
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(

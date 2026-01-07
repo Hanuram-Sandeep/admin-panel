@@ -32,13 +32,13 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 
-const params = new URLSearchParams(window.location.search);
-const redirect = params.get("redirect");
-const redirected = params.get("redirected");
+// const params = new URLSearchParams(window.location.search);
+// const redirect = params.get("redirect");
+// const redirected = params.get("redirected");
 
-if (redirect && redirected === "true") {
-  window.history.replaceState(null, "", "/admin" + redirect);
-}
+// if (redirect && redirected === "true") {
+//   window.history.replaceState(null, "", "/admin" + redirect);
+// }
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

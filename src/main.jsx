@@ -33,14 +33,14 @@ import App from "./App";
 import "./index.css";
 
 // GitHub Pages SPA redirect fix
-const redirect = new URLSearchParams(window.location.search).get("redirect");
-if (redirect) {
-  window.history.replaceState(null, "", redirect);
-}
+// const redirect = new URLSearchParams(window.location.search).get("redirect");
+// if (redirect) {
+//   window.history.replaceState(null, "", redirect);
+// }
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/admin">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>

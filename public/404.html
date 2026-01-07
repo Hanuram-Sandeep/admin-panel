@@ -3,8 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <script>
-      const path = location.pathname.replace("/admin", "");
-      location.replace("/admin/?redirect=" + path);
+      // Redirect only once
+      const pathname = location.pathname;
+      if (!location.search.includes("redirected=true")) {
+        location.replace(
+          "/admin/?redirect=" +
+            encodeURIComponent(pathname.replace("/admin", "")) +
+            "&redirected=true"
+        );
+      }
     </script>
   </head>
   <body></body>

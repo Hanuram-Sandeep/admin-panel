@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <script>
-      location.replace("/admin/");
+      const path = location.pathname;
+      location.replace("/?redirect=" + path);
     </script>
   </head>
   <body></body>

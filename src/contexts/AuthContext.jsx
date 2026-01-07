@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 const AuthContext = createContext(undefined);
 
-const ADMIN_EMAIL = "admin@example.com";
+const ADMIN_EMAIL = "admin@indiansouls.com";
 const ADMIN_PASSWORD = "admin123";
 
 export const AuthProvider = ({ children }) => {
